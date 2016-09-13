@@ -1,0 +1,13 @@
+#!/bin/bash
+	if [ $1 -eq 0 ]
+	then
+		echo "no of files required not enter"
+		exit 0
+	else
+		for (( i=1;i<=$1;i++ ))
+		do
+			touch ../array/"assignment_3_"$i
+			chmod 777 "assignment_2_"$i
+		done
+	fi
+exit 0
