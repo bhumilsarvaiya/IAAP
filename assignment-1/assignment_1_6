@@ -1,0 +1,19 @@
+#!/bin/bash
+	#Reverseing using rev
+	echo -n "Enter number : "
+	read number
+	rebmun=`echo $number | rev`
+	echo "In reverse $rebmun"
+
+	#Reversing using while loop
+	rebmun=0
+	tmp=$number
+	while [ $tmp -gt 0 ]
+	do
+		temp=`expr $tmp % 10`
+		rebmun=`expr $rebmun \* 10`
+		rebmun=`expr $rebmun + $temp`
+		tmp=`expr $tmp / 10`
+	done
+	echo "Reverse $rebmun"
+exit 0

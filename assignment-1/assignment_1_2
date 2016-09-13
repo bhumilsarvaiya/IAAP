@@ -1,0 +1,18 @@
+#!/bin/bash
+	echo -n "Enter number a : "
+	read a
+	echo -n "Enter number b : "
+	read b
+	echo -n "Enter number c : "
+	read c
+	
+	if [ $a -gt $b -a $a -gt $c ]
+	then
+		echo "Number $a is the largest"
+	elif [ $b -gt $c ]
+	then
+		echo "Number $b is the largest"
+	else
+		echo "Number $c is the largest"
+	fi
+exit 0

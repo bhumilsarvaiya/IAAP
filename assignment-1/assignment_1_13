@@ -1,0 +1,10 @@
+#!/bin/bash
+	echo -n "Enter the string you want to replace : "
+	read old_string
+	echo -n "Enter the replacing string : "
+	read new_string
+	echo -n "Enter filename : "
+	read filename
+	
+	sed -i 's/'$old_string'/'$new_string'/' $filename
+exit 0

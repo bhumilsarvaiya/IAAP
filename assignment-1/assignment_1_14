@@ -1,0 +1,8 @@
+#!/bin/bash
+	echo -n "Enter the string you want to delete: "
+	read string
+	echo -n "Enter filename : "
+	read filename
+	
+	sed -i 's/'$string'//' $filename
+exit 0

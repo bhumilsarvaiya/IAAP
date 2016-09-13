@@ -1,0 +1,13 @@
+#!/bin/bash
+	while getopts ":cd" opt
+	do
+		case $opt in
+		c) clear >&2;;
+		d) ls >&2;;
+		\?) echo "./assignment_1_19 -[OPTIONS]"
+			echo "Options: "
+			echo -e "\t -c clear the screen"
+			echo -e "\t -d show list of files in current working directory";;
+		esac
+	done
+exit 0

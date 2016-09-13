@@ -1,0 +1,7 @@
+#!/bin/bash
+	for (( i=0; i<=8; i++ ))
+	do
+		color=`expr $i + 30`
+		echo -e "\e[1;"$color"mHello World"
+	done
+exit 0

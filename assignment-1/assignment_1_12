@@ -1,0 +1,11 @@
+#!/bin/bash
+	echo -n "Enter a string : "
+	read string
+	gnirts=`echo "$string" | rev`
+	if [[ $gnirts == $string ]]
+	then
+		echo "Given string is palindrome"
+	else
+		echo "Given string is not a palindrome"
+	fi
+exit 0

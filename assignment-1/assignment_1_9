@@ -1,0 +1,21 @@
+#!/bin/bash
+	echo -n "Enter a number : "
+	read number
+
+	echo "Fiboonaci series for given input is :"
+	current=1
+	prev=1
+	for (( i=0; i<=$number; i++ ))
+	do
+		if [ $i -le 1 ]
+		then
+			echo -n "1 "
+		else
+			tmp=$current
+			current=`expr $current + $prev`
+			prev=$tmp
+			echo -n "$current "
+		fi
+	done
+	printf "\n"
+exit 0

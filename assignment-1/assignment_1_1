@@ -1,0 +1,6 @@
+#!/bin/bash
+	echo "Today's date : `date +%d/%m/%Y`" 
+	echo "Time         : `date +%H:%M:%S`" 
+	echo "User name    : `whoami`" 
+	echo "Current path : `pwd`"
+exit 0 

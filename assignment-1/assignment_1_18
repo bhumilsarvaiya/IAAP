@@ -1,0 +1,11 @@
+#!/bin/bash
+	columns=$(tput cols)
+	columns=`expr $columns - 8`
+	while :
+	do
+		echo -ne "\e[s"
+		tput cup 0 $columns
+		echo "`date +%H:%M:%S`"
+		echo -ne "\e[u"
+		sleep 1s
+	done

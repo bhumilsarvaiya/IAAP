@@ -1,0 +1,13 @@
+#!/bin/bash
+	echo -n "Enter number : "
+	read number
+	sum=0
+	tmp=$number
+	while [ $tmp -gt 0 ]
+	do
+		temp=`expr $tmp % 10`
+		sum=`expr $sum + $temp`
+		tmp=`expr $tmp / 10`
+	done
+	echo "Sum of digits : $sum"
+exit 0

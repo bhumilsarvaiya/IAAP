@@ -1,0 +1,16 @@
+#!/bin/bash
+	echo -n "Enter year : "
+	read year
+	mod=`expr $year % 4`
+	mod100=`expr $year % 100`
+	mod400=`expr $year % 400`
+	if [ $mod -eq 0 -a $mod100 -ne 0 ]
+	then
+		echo "$year is a leap year"
+	elif [ $mod100 -eq 0 -a $mod400 -eq 0 ]
+	then
+		echo "$year is a leap year"
+	else
+		echo "$year is not a leap year"
+	fi
+exit 0

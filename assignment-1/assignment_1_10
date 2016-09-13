@@ -1,0 +1,9 @@
+#!/bin/bash
+	echo -n "Enter real number a : "
+	read a
+	echo -n "Enter real number b : "
+	read b
+	sum=`echo "$a"+"$b"|bc`
+	echo "$a + $b = $sum"
+exit 0
+
